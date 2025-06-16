@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <script>
+        function findmax(){
+            var i;
+            var max=0;
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("a").innerHTML=findmax(334,456,254,65676);
+    </script>
+</body>
+</html>
