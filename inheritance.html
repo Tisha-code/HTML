@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <p id="sou"></p> 
+ <p id="koku"></p>  
+ <script>
+    class parent{
+        constructor(color){
+            this.color=color
+        }
+    }
+    class child extends parent{
+        constructor(color,age){
+            super(color)
+            this.age=age
+        }
+    }
+    var grgyvg=new child("pink",12);
+    document.getElementById("sou").innerHTML="My favourite color is "+grgyvg.color;
+    document.getElementById("koku").innerHTML="My age is "+grgyvg.age;
+ </script>
+</body>
+</html>
