@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <button onclick="asc()">ascending order</button> 
+ <button onclick="dasc()">descending order</button>  
+ <p id="ggghg"></p>
+ <script>
+    var a=[40,7,34,89,67]
+    document.getElementById("ggghg").innerHTML=a;
+    function asc(){
+        a.sort(function(a,b){return a-b});
+        document.getElementById("ggghg").innerHTML=a;
+
+    }
+    function dasc(){
+        a.sort(function(a,b){return b-a});
+        document.getElementById("ggghg").innerHTML=a;
+    }
+ </script>
+</body>
+</html>
