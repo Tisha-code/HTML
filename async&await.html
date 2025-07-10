@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="fdg"></h1> 
+  <script>
+   async function add(a,b){
+    var h=await a+b
+display(h)
+   }
+   function display(h){
+    document.getElementById("fdg").innerHTML=h
+   }
+   add(48,42)
+  </script> 
+</body>
+</html>
