@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="ggg"></h1> 
+  <script>
+    var a={name:"Tisha",age:12,grade:8}
+    var b=JSON.stringify(a)
+    var c=JSON.parse(b)
+    document.getElementById("ggg").innerHTML=c.name;
+  </script> 
+</body>
+</html>
