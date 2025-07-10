@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <h1 id="rtrd"></h1>
+ <script>
+    function display(a){
+        document.getElementById("rtrd").innerHTML=a;
+    }
+    function calculate(a,b,callback){
+        var g=a+b
+        callback(g)
+    }
+    calculate(73,37,display)
+ </script>   
+</body>
+</html>
