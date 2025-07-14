@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <form name="abc"onsubmit="fun()">
+    <label>Enter your name</label>
+    <input type="text"name="def">
+    <input type="submit">
+  </form> 
+  <script>
+    function fun(){
+        var x=document.forms["abc"]["def"].value;
+        if(x==""){
+            alert("Name must be filled out")
+            return false;
+        }
+    }
+  </script> 
+</body>
+</html>
