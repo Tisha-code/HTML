@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1>enter the number from 1 to 100</h1>
+  <input type="number"min="1"max="100"id="sthg">
+  <button onclick="check()">Click me!</button>
+  <p id="thbt"></p>
+  <script>
+    function check(){
+        var x=document.getElementById("sthg");
+        if(x.checkValidity()){
+            document.getElementById("thbt").innerHTML="Input is correct";
+        }
+        else{
+            document.getElementById("thbt").innerHTML="Input is not correct"
+        }
+    }
+  </script>  
+</body>
+</html>
