@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    var choice=Number(prompt("Enter 1 for area of triangle \n2 for area of rectangle and \n3 for area of circle"))
+    if(choice==1){
+        var base=Number(prompt("Enter the base of triangle"))
+        var height=Number(prompt("Enter the height of triangle"))
+        alert("The area of triangle is "+(0.5*base*height))
+    }
+    else if(choice==2){
+        var length=Number(prompt("Enter the length of rectangle"))
+        var width=Number(prompt("Enter the width of rectangle"))
+        alert("The area of rectangle is "+(length*width))
+    }
+    else if(choice==3){
+        var radius=Number(prompt("Enter the radius of circle"))
+        alert("The area of circle is "+(3.14*radius*radius))
+    }
+ </script>   
+</body>
+</html>
