@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1>Javascript palindrome</h1>
+  <h2 id="tfgt"></h2> 
+  
+  <script
+    function palindrome(mystring){
+        var input=mystring.replace(/[^A-Z0-9]/ig,"").toLowerCase();
+        var reverseinput=input.split('').reverse().join('');
+        if(input===reverseinput){
+            document.getElementById("tfgt").innerHTML="palindrome";
+        }
+        else{
+            document.getElementById("tfgt").innerHTML="not palindrome";
+        }
+
+    }
+    palindrome("mam");
+  </script> 
+
+</body>
+</html>
