@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <img src="https://4.bp.blogspot.com/_HeMkQFoSCkY/TUWTz_pvQ1I/AAAAAAAADxg/GYC3Vs0gzLc/s1600/cartoons48.JPG"class="fgd">
+    <img src="https://2.bp.blogspot.com/-5oVHNkvqtsU/T4JY_NnJpZI/AAAAAAAADa0/khhEAwtdTgw/s1600/Cartoon%2B5.jpg"class="fgd">
+      
+</section>   
+<script>
+    var myindex=0;
+    carousel();
+    function carousel(){
+        var i;
+        var x=document.getElementsByClassName("fgd");
+        for(i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+        myindex++;
+        if(myindex>x.index){myindex=1}
+        x[myindex-1].style.display="block";
+        setTimeout(carousel,3000);
+    }
+</script> 
+</body>
+</html>
