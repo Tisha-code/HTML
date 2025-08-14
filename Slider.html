@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slider</title>
+</head>
+<body>
+<section>
+    <img src="https://img.freepik.com/premium-photo/noodles_91756-7551.jpg"class="trr">
+    <img src="https://www.amazingclubs.ca/images2/chocolategiftclub.jpg"class="trr">
+    <img src="https://wallpapers.com/images/hd/burger-pictures-e7m25nk81m2mk5m7.jpg"class="trr">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.8UI0MuJRLH3K4ez3QRj1SgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"class="trr">  
+</section>   
+<script>
+    var myindex=0;
+    carousel();
+    function carousel(){
+        var i;
+        var x=document.getElementsByClassName("trr");
+        for(i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+        myindex++;
+        if(myindex>x.index){myindex=1}
+        x[myindex-1].style.display="block";
+        setTimeout(carousel,3000);
+    }
+</script> 
+</body>
+</html>
