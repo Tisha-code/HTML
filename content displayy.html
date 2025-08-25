@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+          body,html{
+         height: 100%;
+         margin: 0;
+         font-size: 16px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-weight: 400;
+         line-height: 1.8em;
+         color: rgb(249, 186, 14);
+         background-color: rgb(249, 238, 123);
+       
+        }
+        h2{
+            color: rgb(235, 65, 162);
+        }
+      
+        .ag{
+            overflow: hidden;
+            background-color: lightpink;
+        }
+        .ag a{
+            float: left;
+            color: lightyellow;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .ag a:hover{
+            background-color: lightyellow;
+            color: hotpink;
+        }
+        .ag a.asd{
+            background-color: orange;
+            color:lightyellow;
+        }
+       .section{
+            text-align: center;
+            padding:50px 80px;
+        }
+        .section-light{
+            background-color: rgb(237, 96, 152);
+            color: #000;
+        }
+        .section-dark{
+            background-color: rgb(1, 18, 12);
+            color: rgb(247, 244, 241);
+            left: 0;
+            bottom:0;
+            width:100%;
+            text-align: center;
+            padding: 10px;
+        }
+      
+        p{
+            color:rgb(237, 96, 152);
+        }
+         .slider{
+         background-attachment: fixed;
+        position: relative;
+        background-repeat:no-repeat;
+        width: 100px;
+      }
+    </style>
+</head>
+<body>
+ <div class="ag">
+    <a class="asd"href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Contact us</a>
+    <a href="#">Services</a>
+ </div><br><br>
+    <span class="border trans"  style="font-size:40px;">
+     <center>Welcome to my website</center>
+    </span>
+</section>
+<h2><center>Gyaru Fashion</center></h2>
+<p>
+Gyaru (ギャル) is a Japanese fashion subculture that emerged in the 1970s, characterized by gaudy fashion styles, dyed hair, and a rejection of traditional beauty standards. The term "gyaru" is derived from the English word "gal" and originally referred to stylish, rebellious young women. This subculture includes various subcategories such as kogyaru, hime gyaru, and ganguro, each with its unique style. Gyaru culture is often associated with a flashy and outgoing lifestyle, embracing tanned skin and dramatic makeup. 
+</p>
+  
+  <div class="pimg3">
+    <div class="ptext">
+        <span class="border trans">
+           <center>Gyaru</center>
+        </span>
+    </div>
+</div>
+<br><br>
+<section>
+    <div class="slider">
+   <center><img class="myslides" src="https://i.pinimg.com/736x/d3/cf/e9/d3cfe97a60fbab03dd42f86a598329a1.jpg"></center>
+    <center><img class="myslides" src="https://i.pinimg.com/originals/ce/86/34/ce8634f7b8d7d66e1ce00e15a4acfc55.jpg"></center>
+    <center><img class="myslides" src="https://i.pinimg.com/736x/97/f9/e2/97f9e21e06abd0b1997329628942c42d.jpg"></center>
+    </div>
+</section>
+<section class="section section-dark">
+    &copy;All copy rights are reserved by Tisha Thuseperera
+</section>
+<script>
+    var myindex=0;
+    carousel();
+    function carousel(){
+        var i;
+        var x=document.getElementsByClassName("myslides");
+        for(i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+        myindex++;
+        if(myindex>x.length){myindex=1}
+        x[myindex-1].style.display="block";
+        setTimeout(carousel,3000);
+    }
+</script>
+</body>
+</html>
