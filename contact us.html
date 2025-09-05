@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+          body,html{
+         height: 100%;
+         margin: 0;
+         font-size: 16px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-weight: 400;
+         line-height: 1.8em;
+         color: rgb(249, 186, 14);
+         background-color: rgb(249, 238, 123);
+       
+        }
+        h2{
+            color: rgb(235, 65, 162);
+        }
+      
+        .ag{
+            overflow: hidden;
+            background-color: lightpink;
+        }
+        .ag a{
+            float: left;
+            color: lightyellow;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .ag a:hover{
+            background-color: lightyellow;
+            color: hotpink;
+        }
+        .ag a.asd{
+            background-color: orange;
+            color:lightyellow;
+        }
+       .section{
+            text-align: center;
+            padding:50px 80px;
+        }
+        .section-light{
+            background-color: rgb(237, 96, 152);
+            color: #000;
+        }
+        .section-dark{
+            position: fixed;
+            background-color: rgb(1, 18, 12);
+            color: rgb(247, 244, 241);
+            left: 0;
+            bottom:0;
+            width:100%;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="ag">
+    <a class="asd"href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Contact us</a>
+    <a href="#">Services</a>
+ </div><br><br>  
+ <section>
+    <div class="slider">
+   <center><img class="myslides" src="https://i.pinimg.com/736x/d3/cf/e9/d3cfe97a60fbab03dd42f86a598329a1.jpg" style="width:270px;height:290;"></center>
+    <center><img class="myslides" src="https://i.pinimg.com/originals/ce/86/34/ce8634f7b8d7d66e1ce00e15a4acfc55.jpg" style="width:270px;height:290;"></center>
+    <center><img class="myslides" src="https://i.pinimg.com/736x/97/f9/e2/97f9e21e06abd0b1997329628942c42d.jpg" style="width:270px;height:290;"></center>
+    </div>
+</section>
+<h1><center>Contact us at: </center></h1>
+<h2>tishahasxb@gmail.com</h2>
+<form>
+<fieldset>
+    <legend>Contact us at: </legend>
+     <label>Name: </label><br>
+     <input type="text" name="name"><br>
+     <label>Enter your age: </label><br>
+     <input type="text" name="age"><br>
+     <label>Enter your email: </label><br>
+     <input type="text" name="email"><br>
+     <label>Message: </label><br>
+     <textarea></textarea><br>
+     <input type="submit" value="submit"> 
+</fieldset>
+</form>
+<script>
+    var myindex=0;
+    carousel();
+    function carousel(){
+        var i;
+        var x=document.getElementsByClassName("myslides");
+        for(i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+        myindex++;
+        if(myindex>x.length){myindex=1}
+        x[myindex-1].style.display="block";
+        setTimeout(carousel,3000);
+    }
+</script>
+</body>
+</html>
